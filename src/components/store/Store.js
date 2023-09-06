@@ -211,7 +211,7 @@ function Store() {
       <div className='my-3 add-new'>
       <div className='col-4 '>
         <input className='form-control'
-          placeholder='search Customer by email'
+          placeholder='search Products by name'
         //  value={keyWord}
           onChange={(event) => handleSearch(event)}
         ></input>

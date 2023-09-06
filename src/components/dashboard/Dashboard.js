@@ -90,7 +90,7 @@ function Dashboard() {
                         data: data.map(item => item.total),
                       },
                       {
-                        name: "total_product",
+                        name: "total quantity",
                         data: data.map(item => item.total_product),
                       },
                     ]}
