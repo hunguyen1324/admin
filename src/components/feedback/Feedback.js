@@ -71,7 +71,9 @@ const Feedback = () => {
                 <Accordion.Item >
                   <Accordion.Header>{item.email_fb}</Accordion.Header>
                   <Accordion.Body>
-                    {item.mess_fb}
+                  <div className='mess_feed'>
+                  {item.mess_fb}
+                  </div>   
                     <div className='btn_action'>
                       <button className='btn btn-warning mx-3'
                         onClick={() => handleViewFeedback(item)}
