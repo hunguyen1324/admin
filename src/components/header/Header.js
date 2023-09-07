@@ -49,9 +49,12 @@ function Header() {
                         <>
                             <Nav className="me-auto" >
                                 <NavLink to="/" className="nav-link">Dashboard</NavLink>
+                                {(user && user.auth)&&
+                                <>
                                 <NavLink to="/customer" className="nav-link">Customer</NavLink>
                                 <NavLink to="/store" className="nav-link">Store</NavLink>
                                 <NavLink to="/feedback" className="nav-link">Feedback</NavLink>
+                                </>}
                             </Nav>
                             <Nav>
                             {user && user.email ? (
