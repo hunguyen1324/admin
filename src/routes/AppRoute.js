@@ -5,6 +5,7 @@ import Feedback from "../components/feedback/Feedback";
 import Store from "../components/store/Store";
 import Login from '../components/login';
 import PrivateRoute from "./PrivateRoute";
+import TableUsers from "../components/tableUser/TableUsers";
 const AppRoute = () => {
     return (
         <>
@@ -30,6 +31,13 @@ const AppRoute = () => {
                     element={
                         <PrivateRoute>
                             <Feedback />
+                        </PrivateRoute>
+                    } />
+                    <Route
+                    path="/tableuser"
+                    element={
+                        <PrivateRoute>
+                            <TableUsers />
                         </PrivateRoute>
                     } />
             </Routes>

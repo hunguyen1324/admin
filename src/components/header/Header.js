@@ -54,6 +54,7 @@ function Header() {
                                 <NavLink to="/customer" className="nav-link">Customer</NavLink>
                                 <NavLink to="/store" className="nav-link">Store</NavLink>
                                 <NavLink to="/feedback" className="nav-link">Feedback</NavLink>
+                                <NavLink to="/tableUser" className="nav-link">TableUser</NavLink>
                                 </>}
                             </Nav>
                             <Nav>
