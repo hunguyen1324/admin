@@ -61,11 +61,11 @@ function Header() {
                             {user && user.email ? (
                                 <span 
                                 onClick={() => handleEditUser(user)}
-                                className='nav-link wecome_admin'>Welcome {user.email}</span>
+                                className='nav-link wecome_admin'>Welcome {user.name}</span>
                               ) : (
                                 <span className='nav-link'>Guest</span>
                               )}
-                                <NavDropdown title="Setting" >
+                                <NavDropdown title="Account" >
                                     {user && user.auth == true ?
                                         <NavDropdown.Item onClick={() => handlelogout()}>Logout</NavDropdown.Item> :
                                         <NavLink to="/login" className="dropdown-item">login</NavLink>}
