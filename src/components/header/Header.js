@@ -61,7 +61,7 @@ function Header() {
                             {user && user.email ? (
                                 <span 
                                 onClick={() => handleEditUser(user)}
-                                className='nav-link wecome_admin'>Welcome {user.name}</span>
+                                className='nav-link wecome_admin'>Welcome {user.adminname}</span>
                               ) : (
                                 <span className='nav-link'>Guest</span>
                               )}
