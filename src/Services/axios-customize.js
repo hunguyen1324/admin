@@ -1,6 +1,6 @@
 import axios from 'axios'
 const instance = axios.create({
-    baseURL: 'https://ppstore.pythonanywhere.com'  
+    baseURL: ' http://127.0.0.1:5000'  
   });
   // Add a response interceptor
   instance.interceptors.response.use(function (response) {
