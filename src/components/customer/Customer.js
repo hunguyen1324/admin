@@ -75,7 +75,7 @@ function Customer() {
   };
   useEffect(() => {
     getCustomers();
-     // Đặt một khoảng thời gian để gọi lại getCustomers sau mỗi 5 phút (300000ms)
+    // Đặt một khoảng thời gian để gọi lại getCustomers sau mỗi 5 phút (300000ms)
     const intervalId = setInterval(getCustomers, 300000);
 
     // Trong useEffect, chúng ta cần trả về một hàm để xử lý khi component unmount
@@ -117,8 +117,8 @@ function Customer() {
       </div>
       <div className='col-4 my-3'>
         <input className='form-control'
-          placeholder='search Customer by email'
-        //  value={keyWord}
+          placeholder='Search Customer by email'
+          //  value={keyWord}
           onChange={(event) => handleSearch(event)}
         ></input>
       </div>
@@ -137,15 +137,15 @@ function Customer() {
               </div>
             </th>
             <th>
-            <div className='sort-header'>
-            <span>Email</span>
-            <span><i className="fa-solid fa-arrow-up"
+              <div className='sort-header'>
+                <span>Email</span>
+                <span><i className="fa-solid fa-arrow-up"
                   onClick={() => handleSort("asc", "email_ct")}
                 ></i>
                   <i className="fa-solid fa-arrow-down"
                     onClick={() => handleSort("desc", "email_ct")}
                   ></i></span>
-                </div>
+              </div>
             </th>
             <th>Customer</th>
             <th>Phone</th>
@@ -160,13 +160,13 @@ function Customer() {
             listCustomers.map((item, index) => {
               return (
                 <tr key={`Customers-${index}`}>
-                  <td>{index+1}</td>
+                  <td>{index + 1}</td>
                   <td>{item.email_ct}</td>
                   <td>{item.user_ct}</td>
                   <td>{item.phone_ct}</td>
                   <td>{item.address_ct}</td>
-                  <td style={{ cursor:'pointer' }}
-                  onClick={() => handleViewCustomer(item)}
+                  <td style={{ cursor: 'pointer' }}
+                    onClick={() => handleViewCustomer(item)}
                   >{truncateText(item.mess_ct, 20)}</td>
                   <td>
                     <button className='btn btn-warning mx-3'
@@ -198,10 +198,10 @@ function Customer() {
         handleClose={handleClose}
       />
       <ModalView
-      show={IsShowModalView}
-      dataCustomerView={dataCustomerView}
-      handleClose={handleClose}
-    />
+        show={IsShowModalView}
+        dataCustomerView={dataCustomerView}
+        handleClose={handleClose}
+      />
     </>
   );
 }

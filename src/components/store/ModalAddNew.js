@@ -49,7 +49,7 @@ function ModalAddNew(props) {
     <>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Add new User</Modal.Title>
+          <Modal.Title>Add new product</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <div>

@@ -57,7 +57,7 @@ const Feedback = () => {
     <>
       <div className='col-4 my-3'>
         <input className='form-control'
-          placeholder='search Customer by email'
+          placeholder='Search Customer by email'
           //  value={keyWord}
           onChange={(event) => handleSearch(event)}
         ></input>
@@ -71,9 +71,9 @@ const Feedback = () => {
                 <Accordion.Item >
                   <Accordion.Header>{item.email_fb}</Accordion.Header>
                   <Accordion.Body>
-                  <div className='mess_feed'>
-                  {item.mess_fb}
-                  </div>   
+                    <div className='mess_feed'>
+                      {item.mess_fb}
+                    </div>
                     <div className='btn_action'>
                       <button className='btn btn-warning mx-3'
                         onClick={() => handleViewFeedback(item)}

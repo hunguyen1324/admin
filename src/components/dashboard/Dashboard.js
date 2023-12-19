@@ -48,7 +48,7 @@ function Dashboard() {
       chart: {
         type: 'pie',
       },
-      labels: ['men Product', 'women Product'],
+      labels: ['Men Product', 'Women Product'],
     },
     series: [totalmenProduct, totalwomenProduct],
   };
@@ -58,7 +58,7 @@ function Dashboard() {
       chart: {
         type: 'pie',
       },
-      labels: ['men price', 'women price'],
+      labels: ['Men price', 'Women price'],
     },
     series: [totalmenprice, totalwomenprice],
   };

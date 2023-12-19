@@ -69,7 +69,7 @@ function TableUsers() {
       <div className='col-4 my-3'>
         <input className='form-control'
           placeholder='search user by email'
-        //  value={keyWord}
+          //  value={keyWord}
           onChange={(event) => handleSearch(event)}
         ></input>
       </div>
@@ -124,7 +124,7 @@ function TableUsers() {
                   <td>
                     <button className='btn btn-danger mx-3'
                       onClick={() => handleDeleteUser(item)}
-                    >delete
+                    >Delete
                     </button>
                   </td>
                 </tr>
